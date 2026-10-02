@@ -1,0 +1,33 @@
+Package: zujson
+Title: Lightweight JSON Parsing and Serialization
+Version: 0.1.0
+Authors@R: c(
+    person("Pedro", "Baltazar", , "pedrobtz@gmail.com", role = c("aut", "cre", "cph")),
+    person("YaoYuan", role = c("ctb", "cph"),
+           comment = "author of the bundled yyjson library")
+  )
+Description: Converts between JSON text and ordinary R vectors and lists
+    through a small, predictable set of functions, backed by vendored
+    'yyjson' <https://github.com/ibireme/yyjson> and requiring no system
+    JSON library. Parsing accepts character, raw and file input and reports
+    failures through structured conditions; serialization writes UTF-8 bytes
+    suitable for use directly as an HTTP request body. The type mapping is
+    deliberately narrow and fully documented, so what goes in and what comes
+    out are both predictable.
+License: MIT + file LICENSE
+URL: https://github.com/pedrobtz/zujson,
+        https://pedrobtz.github.io/zujson/
+BugReports: https://github.com/pedrobtz/zujson/issues
+Encoding: UTF-8
+Language: en-GB
+Imports: utils
+Suggests: jsonlite, knitr, rmarkdown, testthat (>= 3.2.0), withr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: yes
+Packaged: 2026-09-18 13:05:38 UTC; pbtz
+Author: Pedro Baltazar [aut, cre, cph],
+  YaoYuan [ctb, cph] (author of the bundled yyjson library)
+Maintainer: Pedro Baltazar <pedrobtz@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-10-02 09:10:01 UTC
